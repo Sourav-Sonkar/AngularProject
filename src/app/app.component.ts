@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'myApp';
+  beverages: string[]
+
+  constructor() {
+    this.beverages = ['tea', 'coffee', 'milk', 'water']
+  }
+
+  deleteBeverage(i) {
+    this.beverages.splice(i, 1)
+  }
+
 }
