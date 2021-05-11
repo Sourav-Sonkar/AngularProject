@@ -6,4 +6,11 @@
     <button type="button" class="btn btn-success" (click)="changeColor(2)">Green</button>
     <button type="button" class="btn btn-danger" (click)="changeColor(3)">Red</button>
   </div>
+  <hr>
+  <div class="d-flex justify-content-between">
+    <button type="button" class="btn btn-success material-icons" (click)="changeTextSize(false)">add</button>
+    <p class="{{sizeString}}">Change size of text</p>
+    <button type="button" class="btn btn-danger material-icons" (click)="changeTextSize(true)">remove</button>
+  </div>
+  <hr>
 </div>
