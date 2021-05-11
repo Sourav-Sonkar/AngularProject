@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'myApp';
+  flag: boolean;
+  constructor() {
+    this.flag = true;
+  }
+  changeToogle() {
+    this.flag = !this.flag
+  }
 }
