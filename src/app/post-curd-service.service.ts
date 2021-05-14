@@ -5,13 +5,13 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class PostCurdServiceService {
-  post: any[]
+  posts: any[]
   constructor(public http: HttpClient) {
 
   }
   getPost() {
     this.http.get("https://jsonplaceholder.typicode.com/posts").subscribe((data: any[]) =>
-      this.post = data
+      this.posts = data
     )
   }
 }
